@@ -64,7 +64,7 @@ chmcrd_weight   = [] # F10.5
 
 ### Retrieve coordinate information
 pattern_natoms = '^[0-9]+$'             # natom
-pattern_coord  = '^\s*[0-9]+\s+[0-9]+'	# atomid & resid
+pattern_coord  = '^\s*[0-9]+\s+[0-9]+'  # atomid & resid
 
 with open(inp_name, 'r') as inp_file:
 	for each_line in inp_file:
