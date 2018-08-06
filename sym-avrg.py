@@ -5,7 +5,7 @@
 ###       (2) The fold of symmetry will be determined from number of segments.
 ###       (3) Each segments should have EXACT the same number of atoms.
 ### Usage: Suppose the rotation is along Z-axis
-###       ./sym-coor.py input.cor 0 0 1
+###       ./sym-avrg.py input.cor 0 0 1
 
 import numpy as np
 import itertools
