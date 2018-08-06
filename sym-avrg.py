@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #!/usr/bin/env python
 
 ### Genrate symmetric averaged structure based on input coordinates
@@ -33,7 +34,7 @@ def write_chmcrd(out_name, header, natoms,
 		out_file.write("%s\n"%natoms)
 		for (atom, ires, resn, atomtype, crd, seg, resi, w) in \
 			itertools.izip(atomid, resnum, resname, atomtype, coord, segid, resid, weight):
-			out_file.write("%5d%5d %-4s %-4s%10.5f%10.5f%10.5f %4s %-4d%10.5f\n" % \
+			out_file.write("%5d%5d %-4s %-4s%10.5f%10.5f%10.5f %-4s %-4d%10.5f\n" % \
 				(atom, ires, resn, atomtype, crd[0], crd[1], crd[2], seg, resi, w))
 
 ### Process input
